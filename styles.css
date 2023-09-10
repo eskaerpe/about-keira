@@ -1,0 +1,116 @@
+/* palette : https://colorhunt.co/palette/cc9b6df1ca89f2dac3c8c2bc */
+/* CC9B6D, F1CA89, F2DAC3, C8C2BC */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #f5e6d8;
+    min-height: 2000px;
+}
+
+.active {
+    font-weight: bold;
+}
+
+.navbar {
+    background-color: #cc9b6d;
+    color: white;
+    position: relative;
+}
+
+.container-fluid {
+    width: 85%;
+}
+
+.navbar .navbar-brand {
+    color: white;
+}
+
+.nav-item,
+.nav-item .dropdown-item {
+    transition: 0.3s;
+}
+
+.nav-item:hover {
+    border-radius: 10px;
+    padding: 5px;
+    box-shadow: 0px 0px 5px black;
+    /* border: 1px solid black; */
+}
+
+.nav-item .dropdown-item:hover {
+    /* box-shadow: 0px -0.5px 5px black; */
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+#hero-section {
+    margin-top: 25vh;
+    height: 70vh;
+}
+#hero-section h1 {
+    width: 100%;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+
+    animation: typing 3.5s steps(30, end), blink-caret 0.5s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+#hero-section ul {
+    text-decoration: none;
+    list-style-type: none;
+    display: inline;
+}
+#hero-section li {
+    display: inline;
+}
+
+#hero-section i {
+    position: absolute;
+    bottom: 10vh;
+    animation: angle-down-jumping 2s infinite;
+}
+
+@keyframes angle-down-jumping {
+    0% {
+        bottom: 10vh;
+    }
+    60% {
+        bottom: 5vh;
+    }
+}
+
+#about {
+    height: 100%;
+    padding: 1.5rem 0;
+    background-color: #f1ca89;
+}
+
+#about h1,
+#about h3 {
+    text-align: center;
+}
+#about p {
+    text-align: justify;
+}
+
+#favorite h3 {
+    text-align: center;
+    width: auto;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #f1ca89;
+}
