@@ -1,5 +1,15 @@
 /* palette : https://colorhunt.co/palette/cc9b6df1ca89f2dac3c8c2bc */
 /* CC9B6D, F1CA89, F2DAC3, C8C2BC */
+
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap");
+/* font-family: 'Dancing Script', cursive;
+font-family: 'Kaushan Script', cursive;
+font-family: 'League Spartan', sans-serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Noto Serif Vithkuqi', serif;
+font-family: 'Proza Libre', sans-serif;
+font-family: 'Roboto', sans-serif; */
+
 * {
     margin: 0;
     padding: 0;
@@ -7,7 +17,13 @@
 
 body {
     background-color: #f5e6d8;
-    min-height: 2000px;
+    min-height: 3500px;
+}
+
+@media only screen and (max-width: 400px) {
+    body {
+        min-height: 4500px;
+    }
 }
 
 .active {
@@ -46,6 +62,11 @@ body {
     font-weight: bold;
 }
 
+section h1 {
+    font-family: "Dancing Script", cursive;
+    font-size: 5rem;
+}
+
 #hero-section {
     margin-top: 25vh;
     height: 70vh;
@@ -82,7 +103,7 @@ body {
 #hero-section i {
     position: absolute;
     bottom: 10vh;
-    animation: angle-down-jumping 2s infinite;
+    /* animation: angle-down-jumping 2s infinite; */
 }
 
 @keyframes angle-down-jumping {
@@ -92,6 +113,22 @@ body {
     60% {
         bottom: 5vh;
     }
+}
+
+#play-lagu {
+    height: 100vh;
+    padding-top: 15vh;
+}
+#play-lagu .container-fluid {
+    border-radius: 20px;
+    padding: 50px 10px;
+    background: white;
+}
+#play-lagu i {
+    /* position: relative;
+    left: 50%;
+
+    bottom: -20vh; */
 }
 
 #about {
