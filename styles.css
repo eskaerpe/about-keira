@@ -17,7 +17,7 @@ font-family: 'Roboto', sans-serif; */
 
 body {
     background-color: #f5e6d8;
-    min-height: 3500px;
+    min-height: 4000px;
 }
 
 @media only screen and (max-width: 400px) {
