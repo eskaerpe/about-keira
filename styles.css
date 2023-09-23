@@ -122,7 +122,8 @@ section h1 {
 #play-lagu .container-fluid {
     border-radius: 20px;
     padding: 50px 10px;
-    background: white;
+    background-color: #f2dac3;
+    /* background: white; */
 }
 #play-lagu i {
     /* position: relative;
