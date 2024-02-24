@@ -3,6 +3,15 @@
 ====================================================== */
 
 /* @import url("https://fonts.googleapis.com/css2?family=Great+Vibes&family=Kalam:wght@300;400;700&display=swap"); */
+/* https://colorhunt.co/palette/ffc5c5ffebd8c7dca789b9ad */
+
+.pallete {
+    background-color: #ffc5c5;
+    background-color: #ffebd8;
+    background-color: #c7dca7;
+    background-color: #89b9ad;
+}
+
 .kalam-light {
     font-family: "Kalam", cursive;
     font-weight: 300;
@@ -22,22 +31,201 @@
 }
 .great-vibes-regular {
     font-family: "Great Vibes", cursive;
-    /* font-weight: 400; */
-    /* font-style: normal; */
+    font-weight: 400;
+    font-style: normal;
 }
 
-.header-birthday {
+/* // <uniquifier>: Use a uniquifier for the class name
+// <weight>: Use a value from 300 to 900 */
+.merienda {
+    font-family: "Merienda", cursive;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+body {
+    background-color: #ffc5c5;
+    /* padding: 10px; */
+}
+
+.main-text-birthday {
+    height: 100vh;
+
     margin: auto; /* Added 'auto' to center the box horizontally */
     padding: 0;
     padding: 2px;
     padding-top: 12px;
-    background-color: #cc9b6d;
+    background-color: #ffc5c5; /* Updated color */
     font-size: 30px;
+    color: #ffebd8; /* Updated color */
+}
+
+.head-text-birthday {
+    height: 100vh;
+
+    margin: auto; /* Added 'auto' to center the box horizontally */
+    padding: 0;
+    padding: 2px;
+    padding-top: 12px;
+    background-color: #ffc5c5; /* Updated color */
+    font-size: 30px;
+    color: #ffebd8; /* Updated color */
+
+    background: url("assets-bd/main-bg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.head-text-birthday h1 {
+    font-size: 6rem;
+    font-family: "Great Vibes", cursive;
+    text-align: center;
+    padding-top: 20px;
+    color: #8b6d82; /* Updated color */
+    font-weight: bold;
+    animation: slideRight 4s ease-in-out;
+}
+
+@keyframes slideRight {
+    0% {
+        opacity: 0;
+        transform: translateX(-400px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.head-text-birthday .celebration {
+    font-family: "Great Vibes", cursive;
+    font-size: 3.5rem;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+    color: #9b6a8b;
+    margin-top: -20px;
+    animation: fadeUp 3s ease-in-out;
+}
+
+@keyframes fadeUp {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    50% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.head-text-birthday .invited-to {
+    font-family: "Merienda", cursive;
+    font-size: 2.5rem;
+    font-optical-sizing: auto;
+    /* font-weight: 500; */
+    font-style: bold;
+    color: #74335f;
+    animation: fadeDown 1s ease-in-out;
+}
+
+@keyframes fadeDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.head-text-birthday i {
+    margin-top: 200px;
+}
+#bouncing-arrow {
+    animation: fadeUp 7s ease-in-out;
+}
+
+.main-text-birthday h2 {
+    font-size: 3rem;
+}
+
+.location-box {
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+#menu {
+    background-color: #ffebd8;
+}
+
+.all-cards {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+}
+.card {
+    flex: 0 0 auto;
+    margin: 15px;
+    background-color: #8eaca4;
     color: white;
+    font-weight: 400;
+    font-size: 0.8rem;
+}
+
+.card h2 {
+    font-size: 1.5rem;
+    font-family: "Merienda", cursive;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+    text-align: center;
+}
+.card .card-body {
+    font-weight: 400;
+    font-family: "Kalam", cursive;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+#beverage-card .card-group .card:nth-child(1) h2,
+#beverage-card .card-group .card:nth-child(2) h2 {
+    font-size: 1rem;
+    color: white;
+    font-family: "Kalam", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.card a {
+    color: white;
+    font-family: "Kalam", cursive;
+    font-weight: 300;
+    font-style: normal;
 }
 
 @media (max-width: 767px) {
-    .header-birthday {
-        font-size: 50px;
-    }
+}
+
+.transition-main-details {
+    height: 100px;
+    width: auto;
+    /* background-color: red; */
+    background-image: linear-gradient(#f9f9f4, #ffc5c5);
+}
+
+.transition-details-menu {
+    height: 100px;
+    width: auto;
+    border: 0;
+    /* background-color: red; */
+    background-image: linear-gradient(#ffc5c5, #ffebd8);
 }

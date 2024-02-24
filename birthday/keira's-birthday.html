@@ -15,9 +15,9 @@
         <title>Keira's Birthday</title>
     </head>
     <body>
-        <!-- Head Title -->
-        <div class="header-birthday">
-            <h1 class="text-center great-vibes-regular">Keira's Birthday</h1>
+        <!-- Main Title -->
+        <div class="main-text-birthday">
+            <h1 class="text-center great-vibes-regular" style="font-size: 6rem; color: white">Keira's Birthday</h1>
         </div>
 
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
@@ -29,22 +29,41 @@
 <!-- Button trigger modal -->
 <!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Launch demo modal</button> -->
 
-<!-- Modal -->
+<!-- Modal Verification-->
 <div class="modal fade" id="verifModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="verifModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
             <div class="modal-header">
-                <h1 class="modal-title fs-5" id="verifModalLabel">Fill it with your first name to check it if you are invited or not</h1>
+                <h1 class="modal-title fs-5" id="verifModalLabel">Isi dengan nama kamu</h1>
                 <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
             </div>
             <div class="modal-body">
                 <div class="input-group mb-3">
-                    <input type="text" class="form-control" placeholder="Type your First name here" aria-label="Username" aria-describedby="basic-addon1" id="verificationName" />
+                    <input type="text" class="form-control" placeholder="Nama / Nama panggilan" aria-label="Username" aria-describedby="basic-addon1" id="verificationName" />
                 </div>
             </div>
             <div class="modal-footer">
                 <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button> -->
-                <button type="button" class="btn btn-primary" onclick="checkVerification() ">Verify</button>
+                <button type="button" class="btn w-100" onclick="checkVerification()" style="background-color: #89b9ad; color: white">Verify</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal gagal -->
+<div class="modal fade" id="gagalModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="gagalModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5 text-center kalam-bold" id="gagalModalLabel">Verification Failed!</h1>
+                <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
+            </div>
+            <div class="modal-body">
+                <p>Maaf, nama itu tidak ada di daftar undangan. Silahkan coba dengan nama panggilanmu yang lain.</p>
+            </div>
+            <div class="modal-footer">
+                <!-- Refresh Button -->
+                <button type="button" class="btn btn-secondary w-100" onclick="location.reload()">Ulangi</button>
             </div>
         </div>
     </div>
