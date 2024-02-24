@@ -103,7 +103,7 @@
                         </div>
                     </div>
                 </div>
-                <h3 class="text-center mt-2 merienda" style="font-size: 1.5rem" style="font-size: 2rem"><i class="fa-solid fa-champagne-glasses"></i> Beverages <i class="fa-solid fa-champagne-glasses"></i></h3>
+                <h3 class="text-center mt-2 merienda" style="font-size: 1.5rem" style="font-size: 2rem"><i class="fa-solid fa-champagne-glasses"></i> Drinks <i class="fa-solid fa-champagne-glasses"></i></h3>
                 <div id="beverage-card" class="all-cards m-0">
                     <div class="card-group">
                         <div class="card p-2" style="width: 18rem">
@@ -130,6 +130,50 @@
                         </div>
                     </div>
                 </div>
+            </div>
+        </section>
+
+        <div class="transition-menu-order"></div>
+
+        <section id="order" class="pb-5">
+            <h1 class="kalam-regular">Order Here</h1>
+            <div class="container">
+                <script type="text/javascript">
+                    var submitted = false;
+                </script>
+                <iframe name="hiddenConfirm" id="hiddenConfirm" style="display: none" onload="if(submitted){window.location='submitted.html';}"></iframe>
+                <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSfoeEYRbfDUFQXMat3X9NGUceW-0Z1ZILHHZiYAeWHcBXiXZw/formResponse" method="post" target="hiddenConfirm" onsubmit="submitted=true" autocomplete="off">
+                    <input type="text" placeholder="Fill your name Here" name="entry.1136257970" />
+                    <select class="main-course-select" name="entry.1401372878">
+                        <option selected disabled>Choose your Main Course</option>
+                        <option>FISH & CHIPS</option>
+                        <option>CHICKEN STEAK WITH MUSHROOM BALSAMIC</option>
+                        <option>CRISPY CHICKEN WITH PASTA</option>
+                        <option>CHICKEN PARMIGIANA</option>
+                        <option>CHICKEN CORDON BLEU</option>
+                        <option>CARBONARA PASTA</option>
+                    </select>
+                    <br />
+                    <select class="drinks-select" name="entry.1892571198">
+                        <optgroup label="hot-drink">
+                            <option selected disabled>Choose your Drinks</option>
+                            <option>Hot Vanilla Latte</option>
+                            <option>Hot Hazelnut Latte</option>
+                            <option>Hot Lemon Tea</option>
+                            <option>Hot Lychee Tea</option>
+                        </optgroup>
+                        <optgroup label="cold-drink">
+                            <option>Icea Vanilla Latte</option>
+                            <option>Icea Hazelnut Latte</option>
+                            <option>Icea Lemon Tea</option>
+                            <option>Icea Lychee Tea</option>
+                            <option>Passion Fruit</option>
+                            <option>Raspberry Squash</option>
+                        </optgroup>
+                    </select>
+                    <input type="submit" />
+                </form>
+                <button class="submit-form-btn" onclick="confirmeOrder()">Submit</button>
             </div>
         </section>
 
@@ -179,6 +223,25 @@
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal confirm order -->
+<div class="modal fade" id="confirmOrderModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="confirmOrderModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5 text-center kalam-bold" id="confirmOrderModalLabel">Please confirm your order!</h1>
+                <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
+            </div>
+            <div class="modal-body">
+                <p>Apakah kamu sudah yakin dengan pesanan makanan dan minumanmu untuk Keira's Birthday Party Celebration?</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cek Kembali</button>
+                <button type="button" class="btn confirm-order-yakin-btn" onclick="submitOrder()">Yakin</button>
             </div>
         </div>
     </div>

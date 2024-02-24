@@ -18,9 +18,11 @@ function checkVerification() {
     }
 }
 
-if (window.history && window.history.pushState) {
-    window.history.pushState("forward", null, "./#");
-    window.onpopstate = function () {
-        window.location.reload();
-    };
+function confirmeOrder() {
+    $("#confirmOrderModal").modal("show");
+}
+
+function submitOrder() {
+    var inputInsideFormTag = document.querySelector('input[type="submit"]');
+    inputInsideFormTag.click();
 }
