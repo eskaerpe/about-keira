@@ -1,7 +1,30 @@
 window.onload = function () {
     if (window.location.href.includes("keira's-birthday.html")) {
         $("#verifModal").modal("show");
+
+        window.onload = function () {
+            var assetsFolder = "assets-bd/";
+            // var assets = ["image1.jpg", "image2.jpg", "image3.jpg", "main-bg.png"];
+            var assets = ["main-bg.png"];
+
+            assets.forEach(function (asset) {
+                var img = new Image();
+                img.src = assetsFolder + asset;
+            });
+        };
+
+        // Rest of the code...
     }
+};
+
+window.onload = function () {
+    var assetsFolder = "assets-bd/";
+    var assets = ["image1.jpg", "image2.jpg", "image3.jpg"];
+
+    assets.forEach(function (asset) {
+        var img = new Image();
+        img.src = assetsFolder + asset;
+    });
 };
 
 function checkVerification() {
