@@ -34,6 +34,11 @@
     font-weight: 400;
     font-style: normal;
 }
+.great-vibes-bold {
+    font-family: "Great Vibes", cursive;
+    font-weight: 400;
+    font-weight: bold;
+}
 
 /* // <uniquifier>: Use a uniquifier for the class name
 // <weight>: Use a value from 300 to 900 */
