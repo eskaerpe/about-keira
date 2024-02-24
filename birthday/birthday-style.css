@@ -65,6 +65,17 @@ body {
     color: #ffebd8; /* Updated color */
 }
 
+.main-text-birthday h1 {
+    font-family: "Great Vibes", cursive;
+    font-weight: bold;
+    font-style: normal;
+}
+.main-text-birthday h2 {
+    font-family: "Great Vibes", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
 .head-text-birthday {
     height: 100vh;
 
