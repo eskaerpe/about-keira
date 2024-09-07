@@ -153,3 +153,7 @@ section h1 {
     padding-bottom: 5px;
     border-bottom: 2px solid #f1ca89;
 }
+
+.two-year p {
+    font-size: 1.2rem;
+}
